@@ -4,16 +4,12 @@
 struct Student{
     char name[20];
     int age;
+    char address[100];
 };
 int main(){
 
 struct Student s;
-s.age=18;
-strcpy(s.name,"Ram");
-
-
-printf("Student Name: %s",s.name);
-printf("\nStudent Age: %d",s.age);
+printf("%d",sizeof(s));
 
 return 0;
 }
